@@ -1,0 +1,83 @@
+           				___BLOG ON DIFFERENCE BETWEEN DOCUMENT AND WINDOW OBJECTS___
+
+
+◄►Introduction :
+     
+           • When working with javascript, developers often encounter the terms "document" and "window" objects. These objects play crucial roles in 
+web development, but understanding their difference is essential for effective programiing. In this blog post, we will explore the distance between the
+document and window objects and how they contribute to creating dynamic and interactive web pages.
+
+
+" DOCUMENT OBJECT "
+  
+           • The Document Object represents the entire HTML document and serves as a vital interface for manipulating the content within it. It is part
+of the Document Object Model (DOM) and provides a structured representation of the document, essentially creating a tree-like structure of elements.
+
+key characteristics of the Document Object include :
+
+   1.Hierarchy;
+           • The Document Object encapsulates the entire HTML structure, including elements like '<head>','<body>', and all the nested elements within them.
+
+   2.Methods for Elements Manipulation;
+           • Through the Document Object, developers can access,modify or manipulate HTML elements, attributes and text content dynamically.
+
+   3.Content Loaded Event;
+           • The Document objects emits the 'DOMContentLoaded' event, indicating when the intial HTML document has been completely loaded and parsed.
+
+   4.Document-level properties;
+           • It exposes properties related to the document, such as title,URL and forms.
+
+Example of accessing the title of the document using Document object:
+		  
+			const pageTitle = document.title;
+
+
+ " WINDOW OBJECT "
+
+ 	    • On the other hand, the Window Object represents the browser window or a frame within it. It is the global oject in client-side javascript,
+and every variable or function declared globally becomes a property or method of the window object.
+
+Key characteristics of the window object include :
+
+    1.Global Scope;
+	    • Variables and function declared globally become properties and methods of the window Objects.
+
+    2.Browsing Context;
+	    • It provides information about the browser window, including dimension, location and history.
+   
+    3.Window-level Events;
+	    • Events like 'load','resize' and 'unload' are associated with the Window Object, offering developers opportunities to trigger actions based on these events.
+
+    4.Timers;
+	    • The Window Object handles timers and intervals, enabling the execution of code at specified intervals.
+
+Example of opening a new window using Window Object:
+
+			window.open('https://example.com', '_blank');
+
+  ** KEY DIFFERENCES **
+
+     1.Scope:
+           • Document Object is focused on the content and structure of the HTML document.
+           • Window Object is global, encompassing the entire browser window or frame.
+
+     2. Hierarchy:
+           • Document Object represents the hierarchical structure of the HTML document.
+	   • Window Object is not hierarchical but provides information about the overall browsing context.
+
+     3. Events:
+	   • Document Object triggers events related to the content,like 'DOMContentLoaded'.
+	   • Window Object handles broader events related to the entire browser window.
+
+     4. Manipulation:
+	   • Document Object allows manipulation of HTML elements and content.
+	   • Window Object deals with the global aspects of the browser,like opening new window or handling timers.
+ 
+
+ ◄►Conclusion :
+		 • The Document Object and Window Object share common ground in the world of web development, their distinct roles make them essential components
+for developers aiming to create dynamic and interactive web pages. Understanding when and how to leverage these objects is key to mastering client-side scripting.
+
+
+																			☺ BLOG BY,
+																			   Nithishkumar B
